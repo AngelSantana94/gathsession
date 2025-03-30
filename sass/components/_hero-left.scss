@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.hero-container-left {
+    .title {
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 78px ;
+        color: white;
+    }
+    .subtitle {
+        font-family: $primary-font;
+        color: $gray-font;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .buttons {
+        
+        ul {
+            @include reset-list();
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+    }
+}

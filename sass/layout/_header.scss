@@ -1,0 +1,11 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+@use "../abstracts/" as *;
+header {
+    width: 100%;
+    background-color: $black-color;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}

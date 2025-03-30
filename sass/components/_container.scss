@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+.container{
+    display: flex;
+    .container-left{
+
+    }
+    .container-right{
+        position: relative;
+        .vector-img  {
+            .vector-01{
+                position: absolute;
+            }
+
+            .vector-02 {
+                position: absolute;
+            }
+
+        }
+    }  
+}

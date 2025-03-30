@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+.principal-nav {
+    color: white;
+    ul {
+        display: flex;
+        align-items: center;
+        @include reset-list();
+        gap: 45px;
+        color: $gray-font;
+        li {
+            color: white;
+        }
+    }
+}
