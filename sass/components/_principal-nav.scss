@@ -2,6 +2,8 @@
 
 .principal-nav {
     color: white;
+    margin-bottom: 70px ;
+    margin-top: 25px;
     ul {
         display: flex;
         align-items: center;
@@ -9,7 +11,36 @@
         gap: 45px;
         color: $gray-font;
         li {
-            color: white;
+            a {
+                color: $gray-font;
+                &:hover {
+                    color: white;
+                    text-decoration: none;
+                }
+                
+            }
+            .home {  
+                color: white;
+                position: relative;  
+                
+                &::after {
+                    content: "";
+                    display: block;  
+                    position: absolute;
+                    bottom: -5px;  
+                    left: 0;
+                    width: 650px;  
+                    height: 3px;  
+                    background-image: url(../../img/underline-icon.svg);
+                    background-repeat: no-repeat;
+                    background-size: 30px;
+
+                }
+                &:hover {
+                    text-decoration: none;
+                    color: $pink_font;
+                }
+            }
         }
     }
 }

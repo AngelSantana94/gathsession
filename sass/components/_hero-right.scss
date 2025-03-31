@@ -1,35 +1,85 @@
+@use "../abstracts/" as *;
+
 .container-hero-right {
-    display: flex                                                                                                                                                                                                              ;
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 200px 210px 210px;
+        column-gap: 25px;
+        row-gap: 25px;                                                                                                                                                                                                             ;
     .box-01{
+        width: 200px;
+        height: 450px;
+        border-radius: 60px;
+        overflow: hidden;
+        background-color: $color-box-1rt;
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 2;
         .image-hero-01 {
-            width: 100px;
+            width: 200px;
+            height: 450px;
+            
         }
     }
 
     .box-02{
+        width: 200px;
+        height: 200px;
+        border-radius: 60px;
+        overflow: hidden;
+        background-color: $color-box-2nd;
+        grid-column: 2;
+        grid-row: 1;
+        z-index: 2;
         .image-hero-02 {
-            width: 100px;
+            width: 200px;
+            height: 200px;
         }
-        
     }
 
     .box-03{
+        width: 200px;
+        height: 450px;
+        border-radius: 60px;
+        overflow: hidden;
+        background-color: $color-box-3rd;
+        grid-column: 3;
+        grid-row: 1;
+        margin-top: 150px;
+        z-index: 2;
         .image-hero-03 {
-            width: 100px;
-        }
+            height: 450px;
+            width: 200px;
+        }   
     }
 
     .box-04{
+        width: 200px;
+        height: 200px;
+        border-radius: 60px;
+        overflow: hidden;
+        background-color: $color-box-4th;
+        grid-column: 1;
+        grid-row: 3;
+        z-index: 2;
+        margin-top: 15px;
         .image-hero-04 {
-            width: 100px;
+            width: 200px;
         }
     }
 
     .box-05{
+        width: 200px;
+        height: 450px;
+        border-radius: 60px;
+        overflow: hidden;
+        background-color: $color-box-5th;
+        grid-column: 2;
+        z-index: 2;
         .image-hero-05 {
-            width: 100px;
+            width: 200px;
+            height: 450px;
         }
     }
-
 
 }

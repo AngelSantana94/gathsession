@@ -1,25 +1,57 @@
 @use "../abstracts/" as *;
 
 .hero-container-left {
+    margin-bottom: 190px;
+    width: 90%;
     .title {
         font-family: $title-font;
         font-weight: 700;
-        font-size: 78px ;
+        font-size: 55px ;
         color: white;
     }
     .subtitle {
         font-family: $primary-font;
         color: $gray-font;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 400;
+        margin-bottom: 42px;
     }
     .buttons {
+        gap: 32px;
         
         ul {
             @include reset-list();
             display: flex;
             gap: 32px;
             align-items: center;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-family: $primary-font;
+            font-size: 18px;
+            text-decoration: underline;
+            font-weight: 600px;
+            &:hover {
+                transform: scale(1.05);
+            }
+            
+        }
+        .button-bg {
+            color: white;
+            font-family: $primary-font;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 14px 61px 15px 60px;
+            background-color: $red-color;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            &:hover{
+                background-color: white;
+                color: $red-color;
+            }
         }
     }
 }

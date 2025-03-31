@@ -2,5 +2,25 @@
 
 .services-container{
     display: flex;
-    background-color: red; 
+    gap: 10px;
+    margin-bottom: 115px;
+    max-width: 90%;
+    .service {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        img {
+            width: 56px;
+            height: 56px;
+            background-color: $gray-bg-icon;
+            padding: 10px;
+            border-radius: 1rem;
+        }
+        p {
+            color: white ;
+            font-family: $primary-font;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
 }

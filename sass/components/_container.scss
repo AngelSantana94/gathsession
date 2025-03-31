@@ -2,18 +2,34 @@
 
 .container{
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     .container-left{
-
+        margin-top: 25px;
+        max-width: 45%;
+        .header{
+            margin-bottom: 65px;
+            img {
+                width: 180px;
+            }
+        }
     }
     .container-right{
+        max-width: 55%;
         position: relative;
         .vector-img  {
             .vector-01{
+                width: 600px ;
                 position: absolute;
+                bottom: -10px;
+                left: 195px;
             }
 
             .vector-02 {
+                width: 450px;
                 position: absolute;
+                bottom: -10px;
+                left: 345px;
             }
 
         }
